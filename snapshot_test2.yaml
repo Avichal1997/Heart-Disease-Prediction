@@ -1,17 +1,11 @@
 apiVersion: cdi.kubevirt.io/v1beta1
 kind: StorageProfile
 metadata:
-  name: local-block-2
+  name: local-block
   resourceVersion: ""
 spec:
   claimPropertySets:
   - accessModes:
     - ReadWriteOnce
     volumeMode: Block
-  - accessModes:
-    - ReadWriteMultiple
-    volumeMode: Block
-  - accessModes:
-    - ReadOnce
-    volumeMode: UnblockBlock
 ---
